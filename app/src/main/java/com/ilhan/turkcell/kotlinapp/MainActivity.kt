@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         println(sayi2)
 */
 
+/*
         //Mantıksal İşlemler
         var example1 : Boolean = 3 < 5
         println("İşlem 1 (<)");
@@ -91,6 +92,20 @@ class MainActivity : AppCompatActivity() {
         example2 = 2 > 1 || example1
         println("İşlem 7 (||)");
         println(example2)  //True döndürür
+*/
+
+        //Veri tipi dönüştürme
+        var sayi3 : Int = 10
+        var sayi4 : Int = 3
+        println(sayi3.toFloat() / sayi4)
+            // Int veri tipi Float veri tipine dönüştürüldü ve sonuçun ondalıklı olması sağlandı.
+
+        var metin1 = "37"
+        //var metin1 = "37.23"  //Ondalıklı olduğu için dönüşüm gerçekleşemez.
+        //var metin1 = "test"   //String veri olduğu için dönüşüm gerekleşemez.
+        var sayi5 = metin1.toInt()
+        println(sayi5)
+            // String veri tipi Int veri tipine dönüştürüldü.
 
     }
 }
