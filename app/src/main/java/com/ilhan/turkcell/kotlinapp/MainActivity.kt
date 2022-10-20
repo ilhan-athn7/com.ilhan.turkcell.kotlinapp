@@ -94,6 +94,7 @@ class MainActivity : AppCompatActivity() {
         println(example2)  //True döndürür
 */
 
+/*
         //Veri tipi dönüştürme
         var sayi3 : Int = 10
         var sayi4 : Int = 3
@@ -106,6 +107,20 @@ class MainActivity : AppCompatActivity() {
         var sayi5 = metin1.toInt()
         println(sayi5)
             // String veri tipi Int veri tipine dönüştürüldü.
+*/
 
+        //Pair özelliği
+        var (a,b) = Pair(3,3.14)
+        println(a);println(b)
+
+        //Nullability özelliği
+        var sayi6 : Int? = null
+        println(sayi6)      //null döndürür
+
+        sayi6 = 14
+        var sayi7 = sayi6 * 2
+        println(sayi7)
+            //"!!" kullanımı derleyiciye "sayi6" değişkeninin null olduğu durumu görmezden gelmesini söyler.
+        
     }
 }
