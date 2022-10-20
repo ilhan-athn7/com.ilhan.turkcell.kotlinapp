@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         println(exampleBoolean)
 */
 
+/*
         //Aritmetik işlemler
         var sayi1 : Int = 24
         var sayi2 : Int = 12
@@ -60,6 +61,36 @@ class MainActivity : AppCompatActivity() {
 
         sayi2 --            //Değişkeni bir azaltır
         println(sayi2)
+*/
+
+        //Mantıksal İşlemler
+        var example1 : Boolean = 3 < 5
+        println("İşlem 1 (<)");
+        println(example1)   //True döndürür
+
+        example1 = 3 <= 5
+        println("İşlem 2 (<=)");
+        println(example1)  //True döndürür
+
+        example1 = 5 <= 5
+        println("İşlem 3 (<=)");
+        println(example1)  //True döndürür
+
+        example1 = 5 == 5
+        println("İşlem 4 (==)");
+        println(example1)  //True döndürür
+
+        example1 = 5 != 5
+        println("İşlem 5 (!=)");
+        println(example1)  //False döndürür
+
+        var example2 = 2 > 1 && example1
+        println("İşlem 6 (&&)");
+        println(example2)  //False döndürür
+
+        example2 = 2 > 1 || example1
+        println("İşlem 7 (||)");
+        println(example2)  //True döndürür
 
     }
 }
