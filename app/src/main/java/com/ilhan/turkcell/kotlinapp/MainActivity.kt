@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+/*
         //Örnek değişken
         var exampleVar = 5
 
@@ -37,6 +38,28 @@ class MainActivity : AppCompatActivity() {
         println(exampleString + " " + exampleString2)
         println(mixedVar)
         println(exampleBoolean)
+*/
+
+        //Aritmetik işlemler
+        var sayi1 : Int = 24
+        var sayi2 : Int = 12
+        var sayiTopla : Int = sayi1 + sayi2 //Toplama
+        var sayiCikar : Int = sayi1 - sayi2 //Çıkarma
+        var sayiBol : Int = sayi1 / sayi2   //Bölme
+        var sayiCarp : Int = sayi1 * sayi2  //Çarpma
+        var sayiMod : Int = sayi1 % sayi2   //Kalan bulma
+
+        println(sayiTopla)
+        println(sayiCikar)
+        println(sayiBol)
+        println(sayiCarp)
+        println(sayiMod)
+
+        sayi1 ++            //Değişkeni bir arttırır
+        println(sayi1)
+
+        sayi2 --            //Değişkeni bir azaltır
+        println(sayi2)
 
     }
 }
