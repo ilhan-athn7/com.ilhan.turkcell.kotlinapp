@@ -124,6 +124,7 @@ class MainActivity : AppCompatActivity() {
             //"!!" kullanımı derleyiciye "sayi6" değişkeninin null olduğu durumu görmezden gelmesini söyler.
 */
 
+/*
         //if else kullanımı
         var sayi8 = 35
         if (sayi8 > 40){
@@ -134,6 +135,21 @@ class MainActivity : AppCompatActivity() {
         }
         else{
             println("60\'tan Büyük")
+        }
+*/
+
+        var sayi9 = 24
+        when (sayi9)
+        {
+            24 -> println("24\'e eşit\'")
+            in 54..74 ->
+            {
+                println("54 ile 74 arasında")
+            }
+            !in 54..74 ->
+            {
+                println("54 ile 74 arasında değil")
+            }
         }
 
     }
