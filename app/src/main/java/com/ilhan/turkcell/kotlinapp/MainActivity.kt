@@ -109,6 +109,7 @@ class MainActivity : AppCompatActivity() {
             // String veri tipi Int veri tipine dönüştürüldü.
 */
 
+/*
         //Pair özelliği
         var (a,b) = Pair(3,3.14)
         println(a);println(b)
@@ -121,6 +122,19 @@ class MainActivity : AppCompatActivity() {
         var sayi7 = sayi6 * 2
         println(sayi7)
             //"!!" kullanımı derleyiciye "sayi6" değişkeninin null olduğu durumu görmezden gelmesini söyler.
-        
+*/
+
+        //if else kullanımı
+        var sayi8 = 35
+        if (sayi8 > 40){
+            println("40\'tan Büyük")
+        }
+        else if (sayi8 < 60){
+            println("60\'tan Küçük ve 40'tan Büyük")
+        }
+        else{
+            println("60\'tan Büyük")
+        }
+
     }
 }
