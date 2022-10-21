@@ -138,6 +138,7 @@ class MainActivity : AppCompatActivity() {
         }
 */
 
+/*
         var sayi9 = 24
         when (sayi9)
         {
@@ -151,6 +152,21 @@ class MainActivity : AppCompatActivity() {
                 println("54 ile 74 arasında değil")
             }
         }
+*/
+
+        var sayi10 = 0
+        while (sayi10 < 10)
+        {
+            sayi10++
+            println(sayi10)
+        }
+
+        var sayi11 = 0
+        do {
+            sayi11++
+            println(sayi11)
+        }
+        while(sayi11 < 10)
 
     }
 }
