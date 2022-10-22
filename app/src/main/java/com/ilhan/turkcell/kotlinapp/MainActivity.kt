@@ -170,8 +170,30 @@ class MainActivity : AppCompatActivity() {
         while(sayi11 < 10)
 */
 
+/*
         for (i in 1..10)
         {
+            println(i)
+        }
+*/
+
+        for (i in 1..10)
+        {
+            if(i >= 5)
+            {
+                continue
+                //Döngü içerisinde kendisinden sonraki kodların çalıştırılmadan döngünün devam etmesini sağlar.
+            }
+            println(i)
+        }
+
+        for (i in 1..10)
+        {
+            if(i == 5)
+            {
+                break
+                //Döngüyü sonlandırır.
+            }
             println(i)
         }
 
