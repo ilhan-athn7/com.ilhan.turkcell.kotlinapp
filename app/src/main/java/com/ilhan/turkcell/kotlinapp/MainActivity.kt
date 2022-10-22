@@ -177,6 +177,7 @@ class MainActivity : AppCompatActivity() {
         }
 */
 
+/*
         for (i in 1..10)
         {
             if(i >= 5)
@@ -195,6 +196,21 @@ class MainActivity : AppCompatActivity() {
                 //Döngüyü sonlandırır.
             }
             println(i)
+        }
+*/
+
+        cycle1@for (i in 1..10)
+        {
+            cycle2@for (j in 1..10)
+            {
+                println(j.toString() + "+")
+                if(j >= 5)
+                {
+                    break@cycle1
+                    //"@" kullanılarak döngüler isimlendirildi ve "break" fonksiyonuna hangi döngüden çıkılacağı belirtildi.
+                    //"break" fonksiyonu cycle1 döngüsünü sonlandırmasaydı cycle2 döngüsü 10 kez çalıştırılacaktı.
+                }
+            }
         }
 
     }
