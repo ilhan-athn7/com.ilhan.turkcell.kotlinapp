@@ -154,6 +154,7 @@ class MainActivity : AppCompatActivity() {
         }
 */
 
+/*
         var sayi10 = 0
         while (sayi10 < 10)
         {
@@ -167,6 +168,12 @@ class MainActivity : AppCompatActivity() {
             println(sayi11)
         }
         while(sayi11 < 10)
+*/
+
+        for (i in 1..10)
+        {
+            println(i)
+        }
 
     }
 }
