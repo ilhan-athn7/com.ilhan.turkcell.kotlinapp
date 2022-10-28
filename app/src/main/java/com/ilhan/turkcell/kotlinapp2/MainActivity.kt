@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+/*
         //Veri dizileri
         var exampleSet1 = arrayOf("value1","value2",3,4)
         var exampleSet2 = intArrayOf(3,7,2,1,4)
@@ -20,6 +21,16 @@ class MainActivity : AppCompatActivity() {
 
         exampleSet1.set(1,"valueNew2")
         println(exampleSet1[1])
+*/
+
+        //Sonradan veri girilebilen diziler
+        var exampleSet3 = arrayListOf<String>()
+        exampleSet3.add("value1")
+        exampleSet3.add("value2")
+        println(exampleSet3.get(0))
+
+        exampleSet3.add(0,"value3")
+        println(exampleSet3.get(0))
 
     }
 }
