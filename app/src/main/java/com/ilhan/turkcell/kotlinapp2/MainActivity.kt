@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         println(filter2.toString()) //Karakter sayısı 6'dan uzun olan verileri logcat'e yazdırır
 */
 
+/*
         //Veri dizisindeki verileri ayrı ayrı kullanma
         var topOyunları = arrayListOf<String>()
         topOyunları.add("Voleybol")
@@ -58,6 +59,15 @@ class MainActivity : AppCompatActivity() {
         for (ogeler in topOyunları)
         {
             println(topOyunları.indexOf(ogeler).toString() + " " + ogeler)
+        }
+*/
+
+        //Veri tekrarı olmayan veri dizileri (setOf kullanımı)
+        var exampleSet5 = setOf<Int>(1,2,6,3,2,1,5,3)
+        println("Eleman sayısı:" + exampleSet5.size.toString())
+
+        exampleSet5.forEach {
+            println(it)
         }
 
     }
