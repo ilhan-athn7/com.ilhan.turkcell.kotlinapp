@@ -62,11 +62,30 @@ class MainActivity : AppCompatActivity() {
         }
 */
 
+/*
         //Veri tekrarı olmayan veri dizileri (setOf kullanımı)
         var exampleSet5 = setOf<Int>(1,2,6,3,2,1,5,3)
         println("Eleman sayısı:" + exampleSet5.size.toString())
 
         exampleSet5.forEach {
+            println(it)
+        }
+*/
+
+        //Sonradan veri girilebilen ve veri tekrarı olmayan veri dizileri (HashSet kullanımı)
+        var exampleSet6 = HashSet<Int>()
+        exampleSet6.add(1)
+        exampleSet6.add(2)
+        exampleSet6.add(6)
+        exampleSet6.add(3)
+        exampleSet6.add(2)
+        exampleSet6.add(1)
+        exampleSet6.add(5)
+        exampleSet6.add(3)
+
+        println("Eleman sayısı:" + exampleSet6.size.toString())
+
+        exampleSet6.forEach {
             println(it)
         }
 
