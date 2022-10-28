@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         println(exampleSet3.get(0))
 */
 
+/*
         //Veri dizilerinde filtreleme
         var exampleSet4 = arrayListOf<String>()
         exampleSet4.add("value1")
@@ -45,6 +46,19 @@ class MainActivity : AppCompatActivity() {
 
         var filter2 = exampleSet4.filter { it.length > 6 }
         println(filter2.toString()) //Karakter sayısı 6'dan uzun olan verileri logcat'e yazdırır
+*/
+
+        //Veri dizisindeki verileri ayrı ayrı kullanma
+        var topOyunları = arrayListOf<String>()
+        topOyunları.add("Voleybol")
+        topOyunları.add("Basketbol")
+        topOyunları.add("Futbol")
+        topOyunları.add("Hentbol")
+
+        for (ogeler in topOyunları)
+        {
+            println(topOyunları.indexOf(ogeler).toString() + " " + ogeler)
+        }
 
     }
 }
