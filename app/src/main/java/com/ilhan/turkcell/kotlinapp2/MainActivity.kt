@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         println(exampleSet1[1])
 */
 
+/*
         //Sonradan veri girilebilen diziler
         var exampleSet3 = arrayListOf<String>()
         exampleSet3.add("value1")
@@ -31,6 +32,19 @@ class MainActivity : AppCompatActivity() {
 
         exampleSet3.add(0,"value3")
         println(exampleSet3.get(0))
+*/
+
+        //Veri dizilerinde filtreleme
+        var exampleSet4 = arrayListOf<String>()
+        exampleSet4.add("value1")
+        exampleSet4.add("value2")
+        exampleSet4.add("randomValue")
+
+        var filter1 = exampleSet4.filter { it.startsWith("value") }
+        println(filter1.toString())  //"value" ile başlayan verileri logcat'e yazdırır
+
+        var filter2 = exampleSet4.filter { it.length > 6 }
+        println(filter2.toString()) //Karakter sayısı 6'dan uzun olan verileri logcat'e yazdırır
 
     }
 }
