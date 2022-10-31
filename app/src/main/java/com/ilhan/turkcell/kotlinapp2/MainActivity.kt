@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity() {
         }
 */
 
+/*
         //Sonradan veri girilebilen ve veri tekrarı olmayan veri dizileri (HashSet kullanımı)
         var exampleSet6 = HashSet<Int>()
         exampleSet6.add(1)
@@ -87,6 +88,41 @@ class MainActivity : AppCompatActivity() {
 
         exampleSet6.forEach {
             println(it)
+        }
+*/
+
+        //Aynı anda iki veri dizisinden değer alıp logcat'e yazdırma
+        var kisiler = arrayOf("Ahmet","Ali","Hüseyin","İsmail")
+        var kisiler_yas = arrayOf(22,23,20,19)
+        println("${kisiler[0]} , ${kisiler_yas[0]}")            //"${}" ile string veri içerisinde fonksiyonun döndüreceği deüer dahil edilebilir.
+
+        //İki veriyi ilişkilendirerek kullanma (hashMapOf kullanımı)
+        var kisi_yas = hashMapOf<String,Int>()
+
+        for (i in 0..kisiler_yas.size-1 )
+        {
+            kisi_yas.put(kisiler.get(i),kisiler_yas.get(i))
+        }
+
+        println(kisi_yas.get("İsmail"))
+        kisi_yas["İsmail"] = 25
+        println(kisi_yas["İsmail"])
+
+        //İki veriyi ilişkilendirerek kullanma (hashMapOf kullanımı) (Farklı sözdizimi)
+        var kisi_yas2 = hashMapOf<String,Int>("Ahmet" to 22, "Ali" to 23, "Hüseyin" to 20, "İsmail" to 19)
+
+        kisi_yas2.forEach{
+            println("${it.key} : ${it.value}")
+        }
+
+        //İlişkili verileri filtreleyerek logcat'e yazdırma
+        var kisi_yas2_filtered = kisi_yas2.filter {
+            it.value < 21
+            //println("${it.key} : ${it.value}")
+        }
+
+        kisi_yas2_filtered.forEach{
+            println("anan ${it.key} : ${it.value}")
         }
 
     }
